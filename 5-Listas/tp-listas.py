@@ -265,4 +265,19 @@ lista_ordenada_mayora_a_menor = sorted(lista_numeros, reverse=True)
 print("Lista ordenada de mayor a menor: ", lista_ordenada_mayora_a_menor)
 
 
+#ej13 
+puntajes = [450, 1200, 875, 990, 300, 1500, 640]
 
+mayor = 0
+
+#Me devuelve el mayor de la lista
+for n in puntajes:
+    if n > mayor:
+        mayor = n
+print('El mayor es: ', mayor)
+
+ranking = sorted(puntajes, reverse=True)  #Devuelve la lista de mayor a menor
+print(ranking)
+
+posicion = ranking.index(990)
+print('La posicion del numero 990 es:', posicion) #Dos
